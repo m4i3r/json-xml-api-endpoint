@@ -1,0 +1,130 @@
+{
+  "success": true,
+  "data": [
+    {
+      "type": "Employee",
+      "attributes": {
+        "id": {
+          "label": "ID",
+          "value": 987654,
+          "type": "integer",
+          "universal_id": "id"
+        },
+        "first_name": {
+          "label": "First name",
+          "value": "Manuel",
+          "type": "standard",
+          "universal_id": "first_name"
+        },
+        "last_name": {
+          "label": "Last name",
+          "value": "Maier",
+          "type": "standard",
+          "universal_id": "last_name"
+        },
+        "email": {
+          "label": "Email",
+          "value": "myprivatemail@work.com",
+          "type": "standard",
+          "universal_id": "email"
+        },
+        "position": {
+          "label": "Position",
+          "value": "Junior Softwareentwickler",
+          "type": "standard",
+          "universal_id": "position"
+        },
+        "office": {
+          "label": "Office",
+          "value": {
+            "type": "Office",
+            "attributes": {
+              "id": 123456789,
+              "name": "SOMEWHERE"
+            }
+          },
+          "type": "standard",
+          "universal_id": "office"
+        },
+        "dynamic_7489456123": {
+          "label": "Handynummer",
+          "value": "+123456789",
+          "type": "standard",
+          "universal_id": null
+        },
+        "dynamic_8521346790": {
+          "label": "vCard Slug",
+          "value": "some-random-vcard-slug",
+          "type": "standard",
+          "universal_id": null
+        }
+      }
+    },
+    {
+      "type": "Employee",
+      "attributes": {
+        "id": {
+          "label": "ID",
+          "value": 123456,
+          "type": "integer",
+          "universal_id": "id"
+        },
+        "first_name": {
+          "label": "First name",
+          "value": "John",
+          "type": "standard",
+          "universal_id": "first_name"
+        },
+        "last_name": {
+          "label": "Last name",
+          "value": "Doe",
+          "type": "standard",
+          "universal_id": "last_name"
+        },
+        "email": {
+          "label": "Email",
+          "value": "someothermail@work.com",
+          "type": "standard",
+          "universal_id": "email"
+        },
+        "position": {
+          "label": "Position",
+          "value": "Senior Softwareentwickler",
+          "type": "standard",
+          "universal_id": "position"
+        },
+        "office": {
+          "label": "Office",
+          "value": {
+            "type": "Office",
+            "attributes": {
+              "id": 123456789,
+              "name": "Elsewhere"
+            }
+          },
+          "type": "standard",
+          "universal_id": "office"
+        },
+        "dynamic_7489456123": {
+          "label": "Handynummer",
+          "value": "+987654321",
+          "type": "standard",
+          "universal_id": null
+        },
+        "dynamic_8521346790": {
+          "label": "vCard Slug",
+          "value": "some-random-vcard-slug",
+          "type": "standard",
+          "universal_id": null
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "total_elements": 2,
+    "current_page": 0,
+    "total_pages": 1
+  },
+  "offset": 0,
+  "limit": 200
+}
