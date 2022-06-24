@@ -1,6 +1,8 @@
-# Personio-API-Mockup #
+# json-xml-api-endpoint #
 
-Since the Personio API doesn't provide a developer mode, i created this little docker application to simulate the /v1/company/employees endpoint of the API, as well as the {companyName}.jobs.personio.de/xml site, where job offers are being serialized in xml.
+Since the Personio API doesn't provide a developer mode, i created this little docker application to simulate the /v1/company/employees endpoint of the API, as well as the {companyName}.jobs.personio.de/xml site, where job offers are being serialized in xml. As you can pass your own data, you can use this container to create a xml and json GET-endpoint with any data.
+
+## Build and run the container
 
 ```sh
 docker build -t my-personio-mockup .
@@ -15,11 +17,11 @@ This Repo comes preconfigured with two employees and the content of [test.jobs.p
 ```sh
 mkdir ownData
 
-touch ownData/employees.json && touch ownData/jobs.xml
+touch ownData/data.json && touch ownData/data.xml
 
 docker run -d -p 8080:80 -v /path/to/ownData:/app/data my-personio-mockup
 ```
 
-After choosing one of the two methods above, u should see a confirmation at 127.0.0.1:8080 that the server is running.
+After choosing one of the two methods above, you should see a confirmation at [127.0.0.1:8080](http://127.0.0.1:8080) that the server is running.
 
-You can now make GET-Calls to [127.0.0.1:8080/v1/company/employees](http://127.0.0.1:8080/v1/company/employees) or [127.0.0.1:8080/xml](http://127.0.0.1:8080/xml)
+You can now make GET-Calls to [127.0.0.1:8080/json](http://127.0.0.1:8080/json) or [127.0.0.1:8080/xml](http://127.0.0.1:8080/xml)
