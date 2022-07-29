@@ -7,19 +7,19 @@ Since the Personio API doesn't provide a developer mode, i created this little d
 ```sh
 docker build -t my-personio-mockup .
 
-docker run -d -p 8080:80 my-personio-mockup
+docker run -d -p 8080:80 nameOfDockerbuild
 ```
 
 ## Using your own Data
 
-This Repo comes preconfigured with two employees and the content of [test.jobs.personio.de/xml](https://test.jobs.personio.de/xml). If you want to pass your own data, create a folder and make these two files, where you can store your own information.
+This Repo comes preconfigured with two employees and the content of [test.jobs.personio.de/xml](https://test.jobs.personio.de/xml). If you want to pass your own data, create a folder and make two files (one for xml and one for json), where you can store your own information.
 
 ```sh
 mkdir ownData
 
 touch ownData/data.json && touch ownData/data.xml
 
-docker run -d -p 8080:80 -v /path/to/ownData:/app/data my-personio-mockup
+docker run -d -p 8080:80 -v /path/to/ownData:/app/data nameOfDockerbuild
 ```
 
 After choosing one of the two methods above, you should see a confirmation at [127.0.0.1:8080](http://127.0.0.1:8080) that the server is running.
